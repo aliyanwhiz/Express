@@ -21,9 +21,9 @@ const server =  http.createServer((req, res) => {
     }
     else if(url === '/favicon.png'){
         res.writeHead(200, {"content-type": "image/png"})
-            res.write(Homelogo)
-            res.end()
-        }
+        res.write(Homelogo)
+        res.end()
+    }
     else if(url === '/about'){
     res.writeHead(200, {"content-type": "text/html"})
         res.write("<h1>about page</h1>")
